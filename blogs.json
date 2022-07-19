@@ -1,9 +1,15 @@
 {
   "blogs": [
     {
+      "title": "Small Fixes for 📱",
+      "content": "No Updates After This \n > Fixed Responsiveness \n > Fixed weird highlight issues on Androids",
+      "date": "2022/7/19",
+      "author": "Gavesha"
+    },
+    {
       "title": "First Post 🎊",
       "content": "First testing for the Blog system which uses JSON to store all of my posts. Still has quite a small amount of bugs",
-      "date": "2022/7/19",
+      "date": "2022/7/18",
       "author": "Gavesha"
     }
   ]

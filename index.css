@@ -17,6 +17,11 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Removes Highlighting */
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
 header {
   max-height: 100vh;
   background-size: cover;
@@ -205,8 +210,8 @@ p {
   /* outline: 3px solid red; */
 }
 
-.middle-container *{
-  padding: 10px 10px 0 10px;
+.middle-container * {
+  padding: 10px 10px 10px 10px;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -215,14 +220,15 @@ p {
 }
 
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: var(--primary);
-  
+
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: var(--pop);
   border-bottom-left-radius: 10px;
@@ -230,9 +236,9 @@ p {
 
 /* Project Specifics */
 
-.middle-container .project-element{
+.middle-container .project-element {
   width: clamp(150px, 90%, 600px);
-  padding: 10px 00px 20px 10px;
+  padding: 10px 10px 20px 10px;
   min-height: 50px;
   height: auto;
   border-radius: 10px;
@@ -242,9 +248,73 @@ p {
   transition: transform 0.2s;
 }
 
-.project-element:hover{
-    transform: scale(1.01);
+
+.project-element:hover {
+  transform: scale(1.01);
 }
+
+.middle-container .redirect-element {
+  width: clamp(150px, 90%, 600px);
+  padding: 10px 10px 20px 10px;
+  min-height: 50px;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px 0 10px 0;
+  border: 1px solid #393e46;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.redirect-element:hover {
+  transform: scale(1.01);
+}
+
+.middle-container .custom-pane {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.custom-pane .custom-textbox {
+  display: block;
+  width: clamp(150px, 90%, 600px);
+  min-height: 50px;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px 0 20px 0;
+  white-space: pre-line;
+  border: 1px solid #393e46;
+}
+
+.custom-pane .custom-textbox * {
+  text-align: left;
+  padding: 10px;
+}
+
+#language-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+#language-panel p{
+  padding-left: 25px;
+}
+
+#language-panel .logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.logos * {
+  margin: 0;
+  padding: 5px;
+  min-width: 40px;
+  width: 4vw;
+  height: auto;
+}
+
 
 .middle-container .blog-element {
   display: block;
@@ -254,23 +324,21 @@ p {
   height: auto;
   border-radius: 10px;
   margin: 10px 0 10px 0;
-  background-color: #393e464c;
+  background-color: var(--secondary);
+  white-space: pre-line
 }
 
-.blog-element #title{
+.blog-element #title {
   font-size: clamp(16px, calc(3vw + 1.5vh), 25px);
 }
-.blog-element #content{
+
+.blog-element #content {
   font-size: clamp(11px, calc(1.5vw + 1vh), 20px);
 }
 
-.blog-element #date{
+.blog-element #date {
   font-size: clamp(6px, calc(1vw + 1.5vh), 15px);
 }
-
-
-
-
 
 
 .mobileNav .closebtn {

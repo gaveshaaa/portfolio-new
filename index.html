@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+
+  <title>gavesha.ga</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="top-container" id="cont">
+
+      <nav>
+        <!-- Desktop Navigation -->
+        <div class="navigation">
+          <h1 id="title">gavesha<span style="color: #2599b6">.ga</span></h1>
+          <div class="navigation-right">
+            <a class="active" href="#home">Home</a>
+            <a href="#blog">Blog</a>
+            <a href="#projects">Projects</a>
+            <a href="#">Other</a>
+            <a href="#">Social</a>
+          </div>
+
+          <!-- Hamburger Menu -->
+          <div class="navigation-hamburger">
+            <button id="hamburger-btn" onclick="openNav()">☰</button>
+          </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobileNav" class="mobileNav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#blog" onclick="closeNav()">Blog</a>
+          <a href="#projects" onclick="closeNav()">Projects</a>
+          <a href="#" onclick="closeNav()">Other</a>
+          <a href="#" onclick="closeNav()">Social</a>
+        </div>
+
+
+      </nav>
+
+      <!-- Intro Heading/ Welcome -->
+      <div class="intro">
+        <h1 id="intro-1">Gavesha.</h1>
+        <p id="intro-2">
+          16-year-old software developer and student from Sri Lanka.
+        </p>
+      </div>
+
+      <div class="content">
+        <div class="sponge">
+          <img src="/assets/spongebob.gif" alt="">
+          <img src="/assets/spongebob-1.gif" alt="">
+        </div>
+      </div>
+
+      <!-- Spotify Footer -->
+
+
+    </div>
+  </header>
+  <div class="middle-container">
+    <div class="projects" id="projects">
+      <h1 id="middle-title">Projects</h1>
+      <div class="project-element">
+        <h1>Whatsappfy</h1>
+        <p>Changes your About Me according to current Spotify track</p>
+      </div>
+      <div class="project-element">
+        <h1>Profiler Plus</h1>
+        <p>Animate your Whatsapp profile</p>
+      </div>
+      <div class="project-element">
+        <h1>Skylite Addons</h1>
+        <p>Enhance your Hypixel experience</p>
+      </div>
+    </div>
+    <div class="blog" id="blog">
+      <h1 id="middle-title">Blogs</h1>
+      <!-- For Blogs Handled By index.js -->
+    </div>
+  </div>
+  <div class="spotify" id="footer">
+    <h1 id="spotify-song">Listening to Nothing</h1>
+    <img src="/assets/unknown.png" alt="" id="spotify-img">
+  </div>
+</body>
+<script src="./js/spotify.js" defer></script>
+<script src="./js/index.js" defer></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+</html>
